@@ -1,0 +1,179 @@
+*{
+    padding: 0px;
+    margin: 0px;
+    box-sizing: border-box;
+    font-size: 1rem;
+}
+
+img{
+    max-width: 100%;
+}
+
+a{
+    text-decoration: none;
+    color: #f1f8fe;
+}
+ 
+ul{
+    /* background-color: black; */
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-between;
+}
+
+
+
+ul li {
+    margin: 10px;
+    list-style-type: none;
+
+}
+
+header h2 a{
+    color: #f1f8fe;
+}
+
+header{
+    background-color: #1469ad;
+    padding: 25px 200px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    overflow: auto;
+}
+
+.portada-index {
+    height: 70vh;    
+    background-image: url(../images/imagen-portada-index.jpg);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    resize: auto;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    justify-content: space-around; 
+    padding: 80px 200px;
+    flex-wrap: wrap;
+    overflow: hidden;
+}
+
+.portada-index h1{
+    color: #f1f8fe;
+    text-align: center;
+    font-size: 3rem;
+}
+
+.portada-index p{
+    color: #f1f8fe;
+    text-align: center;
+
+}
+
+.tarjetas-index{
+    height: 50vh;
+    background: #89c4f0; 
+    display: flex;
+    justify-content: space-between;
+    align-items: center;    
+    text-align: center;
+    gap: 1rem;
+    padding: 40px 200px;
+    flex-wrap: wrap;
+}
+
+.tarjet{
+    color: #0e2843;
+    /* background-color: black; */
+    /* display: grid; */
+    gap: 5rem;
+    justify-items: center;
+    text-align: center;
+    height: 70%;
+    width: 20%;
+    flex-wrap: wrap;
+}
+
+.tarjet .fa-solid{
+    color: #f1f8fe;
+    background-color: #1469ad;
+    padding: 20px 20px;
+    /* border-radius: 16px; */
+    font-size: 3rem;
+    margin: 20px;
+    border-radius: 16px;
+    background: #1469ad;
+    box-shadow:  50px black, 60px black;    
+}
+
+.tarjet .fa-regular{
+    font-size: 3rem;
+}
+
+.tarjet h3{
+    font-size: 2rem;
+    margin-bottom: 3rem ;
+}
+
+.tarjet p{
+        font-size: 1rem;
+}
+
+.como-trabajamos{
+    padding: 80px 200px;
+    height: 35vh;
+    background: rgb(137,196,240);
+    background: linear-gradient(#89c4f0, #1469ad);
+    align-items: center;
+    text-align: center;
+}
+
+.como-trabajamos h3{
+    font-size: 2rem;
+    margin-bottom: 3rem ;
+    color: #0e2843;
+}
+
+.como-trabajamos p{
+    font-size: 1.3rem;
+    color: #0e2843 ;
+    
+}
+
+.footer{
+    background-color: #0e2843;
+    height: 35vh;
+    display: flex;
+    justify-content: space-between;
+    padding: 40px 200px;
+    flex-wrap: wrap;
+}
+
+.footer nav ul{
+    
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    justify-content: space-between;
+    
+}
+
+.footer nav ul li a{
+    font-size: 1.2rem;
+}
+
+.footer .info-footer{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.footer .info-footer p{
+    font-size: 1.2rem;
+    color: #f1f8fe;
+}
