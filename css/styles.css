@@ -76,6 +76,29 @@ main {
     /* width: 45vw; */
   }
 }
+@media (min-width: 768px) {
+  .header {
+    padding: 0.5rem 2rem 0.5rem 2rem;
+    height: auto;
+    position: fixed;
+    /* right: 0; */
+    /* top: 0; */
+    z-index: 10000;
+    width: 100%;
+  }
+  .header a {
+    font-size: 1rem;
+  }
+  .header ul {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    align-content: center;
+    justify-items: center;
+    gap: 1rem;
+    /* width: 45vw; */
+  }
+}
 .footer {
   padding: 20px;
   background-color: #0e2843;
@@ -117,6 +140,263 @@ main {
     display: flex;
     flex-direction: column;
     justify-content: space-between;
+  }
+}
+.fadeInDown {
+  -webkit-animation-name: fadeInDown;
+  animation-name: fadeInDown;
+  -webkit-animation-duration: 1s;
+  animation-duration: 1s;
+  -webkit-animation-fill-mode: both;
+  animation-fill-mode: both;
+}
+
+@-webkit-keyframes fadeInDown {
+  0% {
+    opacity: 0;
+    -webkit-transform: translate3d(0, -100%, 0);
+    transform: translate3d(0, -100%, 0);
+  }
+  100% {
+    opacity: 1;
+    -webkit-transform: none;
+    transform: none;
+  }
+}
+@keyframes fadeInDown {
+  0% {
+    opacity: 0;
+    -webkit-transform: translate3d(0, -100%, 0);
+    transform: translate3d(0, -100%, 0);
+  }
+  100% {
+    opacity: 1;
+    -webkit-transform: none;
+    transform: none;
+  }
+}
+.fadeInUp {
+  -webkit-animation-name: fadeInUp;
+  animation-name: fadeInUp;
+  -webkit-animation-duration: 1s;
+  animation-duration: 1s;
+  -webkit-animation-fill-mode: both;
+  animation-fill-mode: both;
+}
+
+@-webkit-keyframes fadeInUp {
+  0% {
+    opacity: 0;
+    -webkit-transform: translate3d(0, 100%, 0);
+    transform: translate3d(0, 100%, 0);
+  }
+  100% {
+    opacity: 1;
+    -webkit-transform: none;
+    transform: none;
+  }
+}
+@keyframes fadeInUp {
+  0% {
+    opacity: 0;
+    -webkit-transform: translate3d(0, 100%, 0);
+    transform: translate3d(0, 100%, 0);
+  }
+  100% {
+    opacity: 1;
+    -webkit-transform: none;
+    transform: none;
+  }
+}
+.pulse:active {
+  -webkit-animation-name: pulse;
+  animation-name: pulse;
+  -webkit-animation-duration: 1s;
+  animation-duration: 1s;
+  -webkit-animation-fill-mode: both;
+  animation-fill-mode: both;
+}
+
+@-webkit-keyframes pulse {
+  0% {
+    -webkit-transform: scale3d(1, 1, 1);
+    transform: scale3d(1, 1, 1);
+  }
+  50% {
+    -webkit-transform: scale3d(1.05, 1.05, 1.05);
+    transform: scale3d(1.05, 1.05, 1.05);
+  }
+  100% {
+    -webkit-transform: scale3d(1, 1, 1);
+    transform: scale3d(1, 1, 1);
+  }
+}
+@keyframes pulse {
+  0% {
+    -webkit-transform: scale3d(1, 1, 1);
+    transform: scale3d(1, 1, 1);
+  }
+  50% {
+    -webkit-transform: scale3d(1.05, 1.05, 1.05);
+    transform: scale3d(1.05, 1.05, 1.05);
+  }
+  100% {
+    -webkit-transform: scale3d(1, 1, 1);
+    transform: scale3d(1, 1, 1);
+  }
+}
+.flipInX {
+  -webkit-backface-visibility: visible !important;
+  backface-visibility: visible !important;
+  -webkit-animation-name: flipInX;
+  animation-name: flipInX;
+  -webkit-animation-duration: 1s;
+  animation-duration: 1s;
+  -webkit-animation-fill-mode: both;
+  animation-fill-mode: both;
+}
+
+@-webkit-keyframes flipInX {
+  0% {
+    -webkit-transform: perspective(400px) rotate3d(1, 0, 0, 90deg);
+    transform: perspective(400px) rotate3d(1, 0, 0, 90deg);
+    -webkit-transition-timing-function: ease-in;
+    transition-timing-function: ease-in;
+    opacity: 0;
+  }
+  40% {
+    -webkit-transform: perspective(400px) rotate3d(1, 0, 0, -20deg);
+    transform: perspective(400px) rotate3d(1, 0, 0, -20deg);
+    -webkit-transition-timing-function: ease-in;
+    transition-timing-function: ease-in;
+  }
+  60% {
+    -webkit-transform: perspective(400px) rotate3d(1, 0, 0, 10deg);
+    transform: perspective(400px) rotate3d(1, 0, 0, 10deg);
+    opacity: 1;
+  }
+  80% {
+    -webkit-transform: perspective(400px) rotate3d(1, 0, 0, -5deg);
+    transform: perspective(400px) rotate3d(1, 0, 0, -5deg);
+  }
+  100% {
+    -webkit-transform: perspective(400px);
+    transform: perspective(400px);
+  }
+}
+@keyframes flipInX {
+  0% {
+    -webkit-transform: perspective(400px) rotate3d(1, 0, 0, 90deg);
+    transform: perspective(400px) rotate3d(1, 0, 0, 90deg);
+    -webkit-transition-timing-function: ease-in;
+    transition-timing-function: ease-in;
+    opacity: 0;
+  }
+  40% {
+    -webkit-transform: perspective(400px) rotate3d(1, 0, 0, -20deg);
+    transform: perspective(400px) rotate3d(1, 0, 0, -20deg);
+    -webkit-transition-timing-function: ease-in;
+    transition-timing-function: ease-in;
+  }
+  60% {
+    -webkit-transform: perspective(400px) rotate3d(1, 0, 0, 10deg);
+    transform: perspective(400px) rotate3d(1, 0, 0, 10deg);
+    opacity: 1;
+  }
+  80% {
+    -webkit-transform: perspective(400px) rotate3d(1, 0, 0, -5deg);
+    transform: perspective(400px) rotate3d(1, 0, 0, -5deg);
+  }
+  100% {
+    -webkit-transform: perspective(400px);
+    transform: perspective(400px);
+  }
+}
+.fadeIn {
+  -webkit-animation-name: fadeIn;
+  animation-name: fadeIn;
+  -webkit-animation-duration: 1s;
+  animation-duration: 1s;
+  -webkit-animation-fill-mode: both;
+  animation-fill-mode: both;
+}
+
+@-webkit-keyframes fadeIn {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+@keyframes fadeIn {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+.slideInDown {
+  -webkit-animation-name: slideInDown;
+  animation-name: slideInDown;
+  -webkit-animation-duration: 1s;
+  animation-duration: 1s;
+  -webkit-animation-fill-mode: both;
+  animation-fill-mode: both;
+}
+
+@-webkit-keyframes slideInDown {
+  0% {
+    -webkit-transform: translateY(-100%);
+    transform: translateY(-100%);
+    visibility: visible;
+  }
+  100% {
+    -webkit-transform: translateY(0);
+    transform: translateY(0);
+  }
+}
+@keyframes slideInDown {
+  0% {
+    -webkit-transform: translateY(-100%);
+    transform: translateY(-100%);
+    visibility: visible;
+  }
+  100% {
+    -webkit-transform: translateY(0);
+    transform: translateY(0);
+  }
+}
+.slideInUp {
+  -webkit-animation-name: slideInUp;
+  animation-name: slideInUp;
+  -webkit-animation-duration: 1s;
+  animation-duration: 1s;
+  -webkit-animation-fill-mode: both;
+  animation-fill-mode: both;
+}
+
+@-webkit-keyframes slideInUp {
+  0% {
+    -webkit-transform: translateY(100%);
+    transform: translateY(100%);
+    visibility: visible;
+  }
+  100% {
+    -webkit-transform: translateY(0);
+    transform: translateY(0);
+  }
+}
+@keyframes slideInUp {
+  0% {
+    -webkit-transform: translateY(100%);
+    transform: translateY(100%);
+    visibility: visible;
+  }
+  100% {
+    -webkit-transform: translateY(0);
+    transform: translateY(0);
   }
 }
 .portada-index {
@@ -264,6 +544,48 @@ main {
     font-weight: 300;
   }
 }
+@media (min-width: 768px) and (max-width: 1024px) {
+  .portada-index {
+    padding: 4rem;
+    height: 100vh;
+  }
+  .portada-index h1 {
+    font-size: 2rem;
+  }
+  .portada-index p {
+    font-size: 1.25rem;
+    font-weight: 300;
+  }
+  .tarjetas-index {
+    padding: 4rem;
+    flex-direction: column;
+    justify-content: space-between;
+    gap: 4rem;
+    height: auto;
+    align-items: center;
+  }
+  .tarjetas-index .tarjet {
+    align-items: center;
+    justify-content: space-between;
+    height: auto;
+    padding: 2rem;
+    gap: auto;
+    border-radius: 1rem;
+    text-align: center;
+    width: 80%;
+  }
+  .tarjetas-index .tarjet .fa-solid {
+    padding: 40px;
+    font-size: 6rem;
+  }
+  .tarjetas-index .tarjet h3 {
+    font-size: 2rem;
+  }
+  .tarjetas-index .tarjet p {
+    font-size: 1.3rem;
+    margin-bottom: auto;
+  }
+}
 .portada-servicios {
   background-image: url(../../images/imagen-portada-servicios.jpg);
   background-position: center;
@@ -364,14 +686,10 @@ main {
     height: 100%;
   }
   .tarjeta-servicios .tarjeta h3 {
-    font-family: "Roboto", sans-serif;
-    color: #0e2843;
     font-size: 2rem;
   }
   .tarjeta-servicios .tarjeta p {
-    font-family: "Roboto", sans-serif;
     font-size: 1.5rem;
-    color: #0e2843;
   }
   .parrafo-servicios {
     padding: 4rem;
@@ -380,6 +698,48 @@ main {
     font-family: "Roboto", sans-serif;
     font-size: 1.5rem;
     color: #0e2843;
+  }
+}
+@media (min-width: 768px) and (max-width: 1024px) {
+  .portada-servicios {
+    padding: 4rem;
+    height: 100vh;
+  }
+  .portada-servicios h3 {
+    font-size: 2rem;
+  }
+  .portada-servicios p {
+    font-size: 1.25rem;
+  }
+  .tarjeta-servicios {
+    padding: 4rem;
+    display: flex;
+    gap: 4rem;
+    align-items: center;
+  }
+  .tarjeta-servicios .tarjeta {
+    padding: 2rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 1.5rem;
+    width: 80%;
+  }
+  .tarjeta-servicios .tarjeta img {
+    width: 100%;
+    height: 100%;
+  }
+  .tarjeta-servicios .tarjeta h3 {
+    font-size: 1.5rem;
+  }
+  .tarjeta-servicios .tarjeta p {
+    font-size: 1.25rem;
+  }
+  .parrafo-servicios {
+    padding: 4rem;
+  }
+  .parrafo-servicios p {
+    font-size: 1.25rem;
   }
 }
 .portada-nuestros-clientes {
@@ -514,19 +874,9 @@ main {
   .portada-nuestros-clientes p {
     font-size: 1.5rem;
   }
-  .portada-nuestros-clientes h3 {
-    font-size: 2.5rem;
-  }
   .testimonios {
     padding: 4rem;
     gap: 4rem;
-  }
-  .testimonios h3 {
-    font-size: 2rem;
-  }
-  .testimonios .carrusel {
-    padding: 3rem;
-    gap: 2rem;
   }
   .testimonios h3 {
     font-size: 2rem;
@@ -579,8 +929,72 @@ main {
     height: 100%;
     max-height: none;
   }
+}
+@media (min-width: 768px) and (max-width: 1024px) {
+  .portada-nuestros-clientes {
+    padding: 4rem;
+    height: 100vh;
+  }
+  .portada-nuestros-clientes h3 {
+    font-size: 2rem;
+  }
+  .portada-nuestros-clientes p {
+    font-size: 1.25rem;
+  }
+  .testimonios {
+    padding: 4rem;
+    gap: 4rem;
+  }
+  .testimonios h3 {
+    font-size: 2rem;
+  }
+  .testimonios .carrusel {
+    padding: 3rem;
+    gap: 2rem;
+  }
+  .testimonios .carrusel .testimonio-texto {
+    gap: 2.5rem;
+  }
+  .testimonios .carrusel .testimonio-texto p {
+    font-size: 1.25rem;
+  }
+  .testimonios .carrusel .usuario {
+    height: auto;
+    gap: 1rem;
+  }
+  .testimonios .carrusel .usuario img {
+    width: 48px;
+    height: 48px;
+    border-radius: 35px;
+  }
+  .testimonios .carrusel .usuario p {
+    font-size: 1rem;
+  }
+  .nuestros-trabajos {
+    padding: 4rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    gap: 5rem;
+  }
   .nuestros-trabajos h3 {
     font-size: 2rem;
+  }
+  .nuestros-trabajos .galeria {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(3, 25vh);
+    justify-items: center;
+    align-items: center;
+    gap: 2rem;
+  }
+  .nuestros-trabajos .galeria .imagen-galeria {
+    box-shadow: 0 0 6px rgba(0, 0, 0, 0.5);
+    object-fit: cover;
+    width: 100%;
+    height: 100%;
+    max-height: none;
   }
 }
 .portada-quienes-somos {
@@ -630,6 +1044,9 @@ main {
 .info .iframe-desktop {
   display: none;
 }
+.info .iframe-tablet {
+  display: none;
+}
 
 @media (min-width: 1024px) {
   .portada-quienes-somos {
@@ -657,6 +1074,40 @@ main {
   }
   .info .iframe-mobile {
     display: none;
+  }
+  .info .iframe-tablet {
+    display: none;
+  }
+}
+@media (min-width: 768px) and (max-width: 1024px) {
+  .portada-quienes-somos {
+    padding: 4rem;
+    height: 100vh;
+  }
+  .portada-quienes-somos h3 {
+    font-size: 2rem;
+  }
+  .portada-quienes-somos p {
+    font-size: 1.25rem;
+  }
+  .info {
+    padding: 4rem;
+    gap: 2rem;
+  }
+  .info h3 {
+    font-size: 2rem;
+  }
+  .info p {
+    font-size: 1.25rem;
+  }
+  .info .iframe-desktop {
+    display: none;
+  }
+  .info .iframe-mobile {
+    display: none;
+  }
+  .info .iframe-tablet {
+    display: block;
   }
 }
 .portada-contacto {
@@ -711,9 +1162,15 @@ main {
 }
 .formulario-contacto .formulario input, .formulario-contacto .formulario textarea {
   width: 100%;
-  border: 1px solid #0e2843;
+  border: 1px solid gainsboro;
   border-radius: 0.2rem;
   padding: 0.5rem;
+}
+.formulario-contacto .formulario input:focus, .formulario-contacto .formulario textarea:focus {
+  width: 100%;
+  border: 1.2px solid #0e2843;
+  border-radius: 0.2rem;
+  padding: 1rem;
 }
 .formulario-contacto .formulario .boton-enviar {
   background-color: #0e2843;
@@ -723,6 +1180,15 @@ main {
   padding: 20px;
   border: none;
   border-radius: 0.2rem;
+  -webkit-box-shadow: 0px 0px 19px -9px rgb(66, 68, 90);
+  -moz-box-shadow: 0px 0px 19px -9px rgb(66, 68, 90);
+  box-shadow: 0px 0px 19px -9px rgb(66, 68, 90);
+}
+.formulario-contacto .formulario .boton-enviar:hover {
+  background-color: #f1f8fe;
+  color: #0e2843;
+  border: 1px solid #0e2843;
+  cursor: pointer;
 }
 
 .parrafo-contacto {
@@ -789,6 +1255,64 @@ main {
   }
   .parrafo-contacto p {
     font-size: 1.5rem;
+    color: #0e2843;
+  }
+}
+@media (min-width: 768px) and (max-width: 1024px) {
+  .portada-contacto {
+    padding: 4rem;
+    height: 100vh;
+  }
+  .portada-contacto h3 {
+    font-size: 2rem;
+  }
+  .portada-contacto p {
+    font-size: 1.25rem;
+  }
+  .formulario-contacto {
+    padding: 4rem;
+    display: flex;
+    flex-direction: column;
+    gap: 4rem;
+  }
+  .formulario-contacto h4 {
+    text-align: center;
+    font-family: "Roboto", sans-serif;
+    font-size: 2rem;
+    color: #0e2843;
+  }
+  .formulario-contacto .formulario {
+    display: flex;
+    flex-direction: column;
+    align-items: baseline;
+    gap: 1rem;
+    width: 100%;
+  }
+  .formulario-contacto .formulario label {
+    font-family: "Roboto", sans-serif;
+    font-size: 1.25rem;
+    color: #0e2843;
+  }
+  .formulario-contacto .formulario input, .formulario-contacto .formulario textarea {
+    width: 100%;
+    border: 1px solid #0e2843;
+    border-radius: 0.2rem;
+    padding: 1rem;
+  }
+  .formulario-contacto .formulario .boton-enviar {
+    background-color: #0e2843;
+    color: #f1f8fe;
+    font-size: 1.25rem;
+    font-family: "Roboto", sans-serif;
+    padding: 1rem;
+    border: none;
+    border-radius: 0.2rem;
+  }
+  .parrafo-contacto {
+    padding: 4rem;
+  }
+  .parrafo-contacto p {
+    font-size: 1.25rem;
     color: #0e2843;
   }
 }

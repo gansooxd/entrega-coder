@@ -163,3 +163,52 @@
         }
     }
 }
+
+@media (min-width:768px)and (max-width:1024px){
+    .portada-index {
+        padding: 4rem;
+        height: 100vh;
+
+        h1 {
+            font-size: 2rem;
+        }
+
+        p {
+            font-size: 1.25rem;
+            font-weight: 300;
+        }
+    }
+    .tarjetas-index {
+        padding: 4rem;
+        flex-direction: column;
+        justify-content: space-between;
+        gap: 4rem;
+        height: auto;
+        align-items: center;
+
+        .tarjet {
+            align-items: center;
+            justify-content: space-between;
+            height: auto;
+            padding: 2rem;
+            gap: auto;
+            border-radius: 1rem;
+            text-align: center;
+            width: 80%;
+
+            .fa-solid {
+                padding: 40px;
+                font-size: 6rem;
+            }
+
+            h3 {
+                font-size: 2rem;
+            }
+
+            p {
+                font-size: 1.3rem;
+                margin-bottom: auto;
+            }
+        }
+    }
+}
