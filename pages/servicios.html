@@ -11,14 +11,14 @@
 </head>
 <body>
 
-    <header>
+    <header class="header">
 
         <!-- el h2 seria una imagen del logo -->
         <h2><a href="../index.html">PC FLORES</a></h2>
         <nav>
             <ul>
                 <li><a href="../index.html">Inicio</a> </li>
-                <li> <a href="./servicios.html">Servicios</a> </li>
+                <li class="activo"> <a href="./servicios.html">Servicios</a> </li>
                 <li> <a href="./nuestros-clientes.html">Nuestros clientes</a> </li>
                 <li><a href="./quienes-somos.html">Quienes somos</a></li>
                 <li> <a href="./contacto.html">Contactos</a> </li>
@@ -31,51 +31,49 @@
 
         <section class="portada-servicios">
 
-            <img src="../images/imagen-portada-servicios.jpg" alt="computadora servicios">
-            <h2>Servicios</h2>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Expedita doloribus hic, minus doloremque ut blanditiis dignissimos magnam consequatur reprehenderit. Cupiditate id laborum, quas cumque debitis minima neque delectus. Voluptas, aperiam. Lorem ipsum dolor sit amet consectetur, adipisicing elit. Doloremque eos consequatur, laborum eligendi, est itaque quam error dolorem, molestias sint saepe minus voluptatibus nulla dolorum ratione expedita vero perspiciatis eaque.</p>
+            <!-- <img src="../images/imagen-portada-servicios.jpg" alt="computadora servicios"> -->
+            <h3>Servicios</h3>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Expedita doloribus hic, minus doloremque ut blanditiis dignissimos magnam consequatur reprehenderit. Cupiditate id laborum, quas cumque debitis minima neque delectus. Voluptas, aperiam. Lorem ipsum dolor sit amet consectetur, adipisicing elit.</p>
 
         </section>
 
-        <br>
-
         <section class="tarjeta-servicios">
-            <article class="tarjeta-servicios-informatica">
+            <article class="tarjeta tarjeta-servicios-informatica">
                 <img src="../images/servicios/informatica.jpg" alt="Arreglo de pc">
                 <h3> Informatica </h3>
                 <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nam non aut debitis, totam veritatis aliquam reiciendis rerum numquam asperiores cumque! Reprehenderit rem optio velit aperiam, placeat obcaecati autem rerum distinctio.</p>
             </article>
 
-            <article class="tarjeta-servicios-video-seguridad">
+            <article class="tarjeta tarjeta-servicios-video-seguridad">
                 <img src="../images/servicios/video-seguridad.jpg" alt="Camara de Seguridad">
                 <h3>Video Seguridad</h3>
                 <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Vero obcaecati blanditiis iste nulla nesciunt, vel reprehenderit provident sint laudantium alias earum quidem! Blanditiis a aspernatur voluptatem suscipit cupiditate. Dolor, quis?</p>
             </article>
         </section>
-        <br>
-        <section class="parrafo">
+        <section class="parrafo-servicios">
             <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ad illum adipisci labore placeat amet totam blanditiis harum vel necessitatibus! Impedit reiciendis deleniti aspernatur magnam delectus amet autem praesentium, asperiores distinctio. Lorem, ipsum dolor sit amet consectetur adipisicing elit. Ipsum illum, perferendis iste amet at fuga deleniti ad. Sed, libero facere neque impedit adipisci quia voluptas magni voluptates, placeat a consequuntur?</p>
         </section>
 
     </main>
 
-    <footer>
-
+    <footer class="footer">
         <nav>
             <ul>
 
-            <li><a href="../index.html">Inicio</a></li>
-            <li><a href="./servicios.html">Servicios</a></li>
-            <li><a href="./nuestros-clientes.html">Nuestros clientes</a></li>
-            <li><a href="./quienes-somos.html">Quienes somos</a></li>
-            <li><a href="./contacto.html">Contactos</a></li>
-            
+                <li><a href="./index.html" class="activo-inicio">Inicio</a></li>
+                <li class="activo"><a href="/pages/servicios.html">Servicios</a></li>
+                <li><a href="/pages/nuestros-clientes.html" class="activo-clientes" >Nuestros clientes</a></li>
+                <li><a href="/pages/quienes-somos.html">Quienes somos</a></li>
+                <li><a href="/pages/contacto.html">Contactos</a></li>
+
             </ul>
         </nav>
 
-        <p>Numero de contacto : 113845835</p>
-        <p>Direccion : Carlos F. Melo 226</p>
-        <p>Horario de atencion: Lunes a Viernes 8:30 a 19:00</p>
+        <div class="info-footer">
+            <p>Numero de contacto : 113845835</p>
+            <p>Direccion : Carlos F. Melo 226</p>
+            <p>Horario de atencion: Lunes a Viernes 8:30 a 19:00</p>
+        </div>
 
     </footer>
     

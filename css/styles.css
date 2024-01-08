@@ -1,511 +1,796 @@
-*{
-    padding: 0px;
-    margin: 0px;
-    box-sizing: border-box;
-    font-size: 1rem;
+* {
+  padding: 0px;
+  margin: 0px;
+  box-sizing: border-box;
+  font-size: 1rem;
 }
 
-img{
-    max-width: 100%;
+img {
+  max-width: 100%;
 }
 
-a{
-    text-decoration: none;
+a {
+  text-decoration: none;
 }
 
 ul li {
-    list-style: none;
+  list-style: none;
 }
 
-.activo-inicio{
-    font-weight: 700;
+.activo {
+  font-weight: 700;
 }
 
-.activo-clientes{
-    font-weight: 700;
+main {
+  background-color: #f1f8fe;
 }
 
-.header{
-    background-color: #0e2843;
-    padding: 20px;
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-    align-items: center;
-    -webkit-box-shadow: 0px 9px 38px -12px rgba(66, 68, 90, 1);
-    -moz-box-shadow: 0px 9px 38px -12px rgba(66, 68, 90, 1);
-    box-shadow: 0px 9px 38px -12px rgba(66, 68, 90, 1);;
+.header {
+  background-color: #0e2843;
+  padding: 20px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  -webkit-box-shadow: 0px 9px 38px -12px rgb(66, 68, 90);
+  -moz-box-shadow: 0px 9px 38px -12px rgb(66, 68, 90);
+  box-shadow: 0px 9px 38px -12px rgb(66, 68, 90);
+}
+.header h2 {
+  text-align: center;
+  max-width: 80px;
+}
+.header h2 a {
+  font-size: 1.2rem;
+}
+.header a {
+  color: #f1f8fe;
+  font-family: "Roboto", sans-serif;
+  font-size: 1.05rem;
+}
+.header ul li {
+  margin-top: 10px;
+  align-items: center;
 }
 
-.header h2{
-    text-align: center;
-    max-width: 80px;
-}
-
-.header h2 a{
-    font-size: 1.2rem;
-}
-
-.header a{
-    color: #f1f8fe;
-    font-family: 'Roboto', sans-serif;
-    font-size: 1.05rem;
-}
-
-.header ul li{
-    margin-top: 10px;
-    align-items: center;
-}
-
-.portada-index{
-    background-image: url(../images/imagen-portada-index.jpg);
-    background-position: center;
-    background-size: cover;
-    background-repeat: no-repeat;
-    background-attachment: fixed;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: space-evenly;
-    padding: 20px;
-    height: 50vh;
-}
-
-.portada-index h1{
-    font-family: 'Roboto', sans-serif;
-    color: #f1f8fe;
-    font-size: 1.5rem;
-}
-
-.portada-index p{
-    font-size: 1.2rem;
-    font-family: 'Roboto', sans-serif;
-    color: #f1f8fe;
-    text-align: justify;
-}
-
-.tarjetas-index{
-    background-color: #f1f8fe;
-    padding: 20px;
-    /* height: 70vh; */
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-    gap: 1rem;
-}
-
-.tarjetas-index .tarjet{
-    background-color:#f1f8fe;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: space-evenly;
-    height: 50vh;
-    padding: 20px;
-    gap: 2rem;
-    border-radius: 1rem;
-    text-align: center;
-    color: #0e2843;
-    -webkit-box-shadow: 0px 0px 19px -9px rgba(66, 68, 90, 1);
-    -moz-box-shadow: 0px 0px 19px -9px rgba(66, 68, 90, 1);
-    box-shadow: 0px 0px 19px -9px rgba(66, 68, 90, 1);
-}
-
-.tarjetas-index .tarjet .fa-solid{
-    padding: 25px;
-    color: #0e2843;
-    background-color: #f1f8fe;
-    border-radius: 2rem;
-    font-size: 5rem;
-    -webkit-box-shadow: 0px 0px 28px -4px rgba(66, 68, 90, 1);
-    -moz-box-shadow: 0px 0px 28px -4px rgba(66, 68, 90, 1);
-    box-shadow: 0px 0px 28px -4px rgba(66, 68, 90, 1);
-}
-
-.tarjetas-index .tarjet h3{
-    font-family: 'Roboto', sans-serif;
-    font-size: 2rem;
-}
-
-.tarjetas-index .tarjet p{
-    font-family: 'Roboto', sans-serif;
-    font-size: 1.2rem;
-    margin-bottom: 2rem;
-}
-
-.como-trabajamos{
-    background-color: #f1f8fe;
-    padding: 25px;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    gap: 1rem;
-}
-
-.como-trabajamos h3{
-    font-family: 'Roboto', sans-serif;
-    font-size: 1.5rem;
-    color: #0e2843;
-}
-
-.como-trabajamos p{
-    font-family: 'Roboto', sans-serif;
-    font-size: 1.2rem;
-    color: #0e2843;
-    text-align: justify;
-}
-
-.footer{
-    padding: 20px;
-    background-color: #0e2843;
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-    height: 30vh;
-}
-
-.footer ul{
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-    height: 100%;
-    text-align: center;
-}
-
-.footer .info-footer{
-    display: none;
-}
-
-.footer a{
-    font-family: 'Roboto', sans-serif;
-    color:#f1f8fe;
-}
-
-.footer p{
-    font-family: 'Roboto', sans-serif;
-    color: #f1f8fe;
-}
-
-.portada-nuestros-clientes{
-    background-image: url(../images/imagen-portada-clientes.jpg);
-    background-position: center;
-    background-size: cover;
-    background-repeat: no-repeat;
-    background-attachment: fixed;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: space-evenly;
-    padding: 20px;
-    height: 50vh;
-}
-
-.portada-nuestros-clientes h3 {
-    font-family: 'Roboto', sans-serif;
-    color: #f1f8fe;
-    font-size: 1.5rem;
-}
-
-.portada-nuestros-clientes p{
-    font-size: 1.2rem;
-    font-family: 'Roboto', sans-serif;
-    color: #f1f8fe;
-    text-align: justify;
-}
-
-.testimonios{
-    padding: 20px;
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-    align-items: center;
-    background-color: #f1f8fe;
-    gap: 2rem;
-}
-
-.testimonios h3{
-    font-family: 'Roboto', sans-serif;
-    color: #0e2843;
-    font-size: 1.5rem;
-    text-align: center;
-}
-
-.testimonios .carrusel{
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-    align-items: center;
-    padding: 20px;
-    border-radius: 1rem;
-    -webkit-box-shadow: 0px 0px 19px -9px rgba(66, 68, 90, 1);
-    -moz-box-shadow: 0px 0px 19px -9px rgba(66, 68, 90, 1);
-    box-shadow: 0px 0px 19px -9px rgba(66, 68, 90, 1);
-}
-
-.testimonios .carrusel .testimonio-texto{
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    padding: 20px;
-    gap: 1rem;
-}
-
-.testimonios .carrusel .testimonio-texto p{
-    font-family: 'Roboto', sans-serif;
-    color: #0e2843;
+@media (min-width: 1024px) {
+  .header {
+    padding: 0.5rem 2rem 0.5rem 2rem;
+    height: auto;
+    position: fixed;
+    /* right: 0; */
+    /* top: 0; */
+    z-index: 10000;
+    width: 100%;
+  }
+  .header a {
     font-size: 1rem;
-    text-align: center;
-}
-
-.testimonios .carrusel .usuario{
+  }
+  .header ul {
     display: flex;
-    flex-direction: column;
-    justify-content: center;
-    gap: 0.5rem;
-    align-items: center;
-    height: 15vh;
-    padding: 20px;
+    flex-direction: row;
+    justify-content: space-evenly;
+    align-content: center;
+    justify-items: center;
+    gap: 1rem;
+    /* width: 45vw; */
+  }
+}
+.footer {
+  padding: 20px;
+  background-color: #0e2843;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  height: 30vh;
+}
+.footer ul {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  height: 100%;
+  text-align: center;
+}
+.footer .info-footer {
+  display: none;
+}
+.footer a {
+  font-family: "Roboto", sans-serif;
+  color: #f1f8fe;
+}
+.footer p {
+  font-family: "Roboto", sans-serif;
+  color: #f1f8fe;
 }
 
-.testimonios .carrusel .usuario img{
-    display: block;
-    width: 32px;
-    height: 32px;
-    border-radius: 20px;
-    -webkit-box-shadow: 0px 0px 19px -9px rgba(66, 68, 90, 1);
-    -moz-box-shadow: 0px 0px 19px -9px rgba(66, 68, 90, 1);
-    box-shadow: 0px 0px 19px -9px rgba(66, 68, 90, 1);
-}
-.testimonios .carrusel .usuario p{
-    font-family: 'Roboto', sans-serif;
-    color: #0e2843;
-    font-size: 0.9rem;
-    font-weight: 300;
-    text-align: center   
-}
-
-.nuestros-trabajos{
-    background-color: #f1f8fe;
-    padding: 50px 20px 20px 20px;
+@media (min-width: 1024px) {
+  .footer {
+    padding: 2rem 4rem;
+    justify-content: space-between;
+    height: auto;
+  }
+  .footer ul {
+    height: 30vh;
+    text-align: start;
+  }
+  .footer .info-footer {
     display: flex;
     flex-direction: column;
     justify-content: space-between;
-    align-items: center;
-    gap: 3rem;
+  }
+}
+.portada-index {
+  background-image: url(../images/imagen-portada-index.jpg);
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-evenly;
+  padding: 20px;
+  height: 50vh;
+}
+.portada-index h1 {
+  font-family: "Roboto", sans-serif;
+  color: #f1f8fe;
+  font-size: 1.5rem;
+  text-shadow: 0.2rem 0.2rem 0.4rem black;
+}
+.portada-index p {
+  font-size: 1.2rem;
+  font-family: "Roboto", sans-serif;
+  color: #f1f8fe;
+  text-align: justify;
+  text-shadow: 0.2rem 0.2rem 0.4rem black;
 }
 
-.nuestros-trabajos h3{
-    font-family: 'Roboto', sans-serif;
-    color: #0e2843;
+.tarjetas-index {
+  background-color: #f1f8fe;
+  padding: 20px;
+  /* height: 70vh; */
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  gap: 1rem;
+}
+.tarjetas-index .tarjet {
+  background-color: #f1f8fe;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-evenly;
+  padding: 20px;
+  gap: 2rem;
+  border-radius: 1rem;
+  text-align: center;
+  color: #0e2843;
+  -webkit-box-shadow: 0px 0px 19px -9px rgb(66, 68, 90);
+  -moz-box-shadow: 0px 0px 19px -9px rgb(66, 68, 90);
+  box-shadow: 0px 0px 19px -9px rgb(66, 68, 90);
+}
+.tarjetas-index .tarjet .fa-solid {
+  padding: 25px;
+  color: #0e2843;
+  background-color: #f1f8fe;
+  border-radius: 2rem;
+  font-size: 5rem;
+  -webkit-box-shadow: 0px 0px 28px -4px rgb(66, 68, 90);
+  -moz-box-shadow: 0px 0px 28px -4px rgb(66, 68, 90);
+  box-shadow: 0px 0px 28px -4px rgb(66, 68, 90);
+}
+.tarjetas-index .tarjet h3 {
+  font-family: "Roboto", sans-serif;
+  font-size: 2rem;
+}
+.tarjetas-index .tarjet p {
+  font-family: "Roboto", sans-serif;
+  font-size: 1.2rem;
+  margin-bottom: 2rem;
+}
+
+.como-trabajamos {
+  background-color: #f1f8fe;
+  padding: 25px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 1rem;
+}
+.como-trabajamos h3 {
+  font-family: "Roboto", sans-serif;
+  font-size: 1.5rem;
+  color: #0e2843;
+}
+.como-trabajamos p {
+  font-family: "Roboto", sans-serif;
+  font-size: 1.2rem;
+  color: #0e2843;
+  text-align: justify;
+}
+
+@media (min-width: 1024px) {
+  .portada-index {
+    align-items: center;
+    justify-content: space-evenly;
+    padding: 4rem;
+    height: 100vh;
+  }
+  .portada-index h1 {
+    font-size: 2.5rem;
+  }
+  .portada-index p {
     font-size: 1.5rem;
+    font-weight: 300;
+  }
+  .tarjetas-index {
+    padding: 4rem;
+    flex-direction: row;
+    justify-content: space-between;
+    gap: auto;
+    height: auto;
+  }
+  .tarjetas-index .tarjet {
+    align-items: center;
+    justify-content: space-between;
+    height: auto;
+    padding: 2rem;
+    gap: auto;
+    border-radius: 1rem;
     text-align: center;
+    width: 33%;
+  }
+  .tarjetas-index .tarjet .fa-solid {
+    padding: 40px;
+    font-size: 6rem;
+  }
+  .tarjetas-index .tarjet h3 {
+    font-size: 2rem;
+  }
+  .tarjetas-index .tarjet p {
+    font-size: 1.3rem;
+    margin-bottom: auto;
+  }
+  .como-trabajamos {
+    padding: 4rem;
+    gap: 4rem;
+  }
+  .como-trabajamos h3 {
+    font-size: 2rem;
+  }
+  .como-trabajamos p {
+    font-size: 1.4rem;
+    font-weight: 300;
+  }
+}
+.portada-servicios {
+  background-image: url(../../images/imagen-portada-servicios.jpg);
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-evenly;
+  padding: 20px;
+  height: 50vh;
+}
+.portada-servicios h3 {
+  font-family: "Roboto", sans-serif;
+  color: #f1f8fe;
+  font-size: 1.5rem;
+  text-shadow: 0.3rem 0.3rem 0.4rem black;
+}
+.portada-servicios p {
+  font-size: 1.2rem;
+  font-family: "Roboto", sans-serif;
+  color: #f1f8fe;
+  text-align: center;
+  text-shadow: 0.3rem 0.3rem 0.4rem black;
 }
 
-.nuestros-trabajos .galeria{
+.tarjeta-servicios {
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+.tarjeta-servicios .tarjeta {
+  padding: 20px;
+  background-color: #f1f8fe;
+  border-radius: 0.8rem;
+  -webkit-box-shadow: 0px 0px 19px -9px rgb(66, 68, 90);
+  -moz-box-shadow: 0px 0px 19px -9px rgb(66, 68, 90);
+  box-shadow: 0px 0px 19px -9px rgb(66, 68, 90);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 1rem;
+}
+.tarjeta-servicios .tarjeta img {
+  border-radius: 0.5rem;
+  border: 1rem black;
+  border: 0.1rem solid #0e2843;
+}
+.tarjeta-servicios .tarjeta h3 {
+  font-family: "Roboto", sans-serif;
+  color: #0e2843;
+  font-size: 2rem;
+}
+.tarjeta-servicios .tarjeta p {
+  font-family: "Roboto", sans-serif;
+  font-size: 1.2rem;
+  color: #0e2843;
+}
+
+.parrafo-servicios {
+  padding: 20px;
+}
+.parrafo-servicios p {
+  font-family: "Roboto", sans-serif;
+  font-size: 1.1rem;
+  color: #0e2843;
+}
+
+@media (min-width: 1024px) {
+  .portada-servicios {
+    padding: 4rem;
+    height: 100vh;
+  }
+  .portada-servicios h3 {
+    font-size: 2.5rem;
+  }
+  .portada-servicios p {
+    font-size: 1.5rem;
+  }
+  .tarjeta-servicios {
+    padding: 4rem;
+    display: flex;
+    flex-direction: row;
+    gap: 4rem;
+  }
+  .tarjeta-servicios .tarjeta {
+    padding: 2rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 1.5rem;
+    width: 100%;
+  }
+  .tarjeta-servicios .tarjeta img {
+    width: 100%;
+    height: 100%;
+  }
+  .tarjeta-servicios .tarjeta h3 {
+    font-family: "Roboto", sans-serif;
+    color: #0e2843;
+    font-size: 2rem;
+  }
+  .tarjeta-servicios .tarjeta p {
+    font-family: "Roboto", sans-serif;
+    font-size: 1.5rem;
+    color: #0e2843;
+  }
+  .parrafo-servicios {
+    padding: 4rem;
+  }
+  .parrafo-servicios p {
+    font-family: "Roboto", sans-serif;
+    font-size: 1.5rem;
+    color: #0e2843;
+  }
+}
+.portada-nuestros-clientes {
+  background-image: url(../images/imagen-portada-clientes.jpg);
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-evenly;
+  padding: 20px;
+  height: 50vh;
+}
+.portada-nuestros-clientes h3 {
+  font-family: "Roboto", sans-serif;
+  color: #f1f8fe;
+  font-size: 1.5rem;
+  text-shadow: 0.2rem 0.2rem 0.4rem black;
+}
+.portada-nuestros-clientes p {
+  font-size: 1.2rem;
+  font-family: "Roboto", sans-serif;
+  color: #f1f8fe;
+  text-align: justify;
+  text-shadow: 0.2rem 0.2rem 0.4rem black;
+}
+
+.testimonios {
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #f1f8fe;
+  gap: 2rem;
+}
+.testimonios h3 {
+  font-family: "Roboto", sans-serif;
+  color: #0e2843;
+  font-size: 1.5rem;
+  text-align: center;
+}
+.testimonios .carrusel {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px;
+  border-radius: 1rem;
+  -webkit-box-shadow: 0px 0px 19px -9px rgb(66, 68, 90);
+  -moz-box-shadow: 0px 0px 19px -9px rgb(66, 68, 90);
+  box-shadow: 0px 0px 19px -9px rgb(66, 68, 90);
+}
+.testimonios .carrusel .testimonio-texto {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  padding: 20px;
+  gap: 1rem;
+}
+.testimonios .carrusel .testimonio-texto p {
+  font-family: "Roboto", sans-serif;
+  color: #0e2843;
+  font-size: 1rem;
+  text-align: center;
+}
+.testimonios .carrusel .usuario {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 0.5rem;
+  align-items: center;
+  height: 15vh;
+  padding: 20px;
+}
+.testimonios .carrusel .usuario img {
+  display: block;
+  width: 32px;
+  height: 32px;
+  border-radius: 20px;
+  -webkit-box-shadow: 0px 0px 19px -9px rgb(66, 68, 90);
+  -moz-box-shadow: 0px 0px 19px -9px rgb(66, 68, 90);
+  box-shadow: 0px 0px 19px -9px rgb(66, 68, 90);
+}
+.testimonios .carrusel .usuario p {
+  font-family: "Roboto", sans-serif;
+  color: #0e2843;
+  font-size: 0.9rem;
+  font-weight: 300;
+  text-align: center;
+}
+
+.nuestros-trabajos {
+  background-color: #f1f8fe;
+  padding: 50px 20px 20px 20px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  gap: 3rem;
+}
+.nuestros-trabajos h3 {
+  font-family: "Roboto", sans-serif;
+  color: #0e2843;
+  font-size: 1.5rem;
+  text-align: center;
+}
+.nuestros-trabajos .galeria {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  gap: 2rem;
+}
+.nuestros-trabajos .galeria .imagen-galeria {
+  max-height: 20vh;
+  box-shadow: 0 0 6px rgba(0, 0, 0, 0.5);
+  object-fit: cover;
+}
+
+@media (min-width: 1024px) {
+  .portada-nuestros-clientes {
+    align-items: center;
+    justify-content: space-evenly;
+    padding: 4rem;
+    height: 100vh;
+  }
+  .portada-nuestros-clientes h3 {
+    font-size: 2.5rem;
+  }
+  .portada-nuestros-clientes p {
+    font-size: 1.5rem;
+  }
+  .portada-nuestros-clientes h3 {
+    font-size: 2.5rem;
+  }
+  .testimonios {
+    padding: 4rem;
+    gap: 4rem;
+  }
+  .testimonios h3 {
+    font-size: 2rem;
+  }
+  .testimonios .carrusel {
+    padding: 3rem;
+    gap: 2rem;
+  }
+  .testimonios h3 {
+    font-size: 2rem;
+  }
+  .testimonios .carrusel {
+    padding: 3rem;
+    gap: 2rem;
+  }
+  .testimonios .carrusel .testimonio-texto {
+    gap: 4rem;
+  }
+  .testimonios .carrusel .testimonio-texto p {
+    font-size: 1.5rem;
+  }
+  .testimonios .carrusel .usuario {
+    height: auto;
+    gap: 1rem;
+  }
+  .testimonios .carrusel .usuario img {
+    width: 48px;
+    height: 48px;
+    border-radius: 35px;
+  }
+  .testimonios .carrusel .usuario p {
+    font-size: 1rem;
+  }
+  .nuestros-trabajos {
+    padding: 4rem;
     display: flex;
     flex-direction: column;
     justify-content: space-between;
+    align-items: center;
+    gap: 5rem;
+  }
+  .nuestros-trabajos h3 {
+    font-size: 2rem;
+  }
+  .nuestros-trabajos .galeria {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(2, 40vh);
+    justify-items: center;
+    align-items: center;
     gap: 2rem;
-}
-
-.nuestros-trabajos .galeria .imagen-galeria{
-    max-height: 20vh;
-    box-shadow: 0 0 6px rgba(0, 0, 0, .5);    
+  }
+  .nuestros-trabajos .galeria .imagen-galeria {
+    box-shadow: 0 0 6px rgba(0, 0, 0, 0.5);
     object-fit: cover;
+    width: 100%;
+    height: 100%;
+    max-height: none;
+  }
+  .nuestros-trabajos h3 {
+    font-size: 2rem;
+  }
+}
+.portada-quienes-somos {
+  background-image: url(../../images/imagen-portada-quienessomos.jpg);
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-evenly;
+  padding: 20px;
+  height: 50vh;
+}
+.portada-quienes-somos h3 {
+  font-family: "Roboto", sans-serif;
+  color: #f1f8fe;
+  font-size: 1.5rem;
+  text-shadow: 0.1rem 0.1rem 0.3rem black;
+}
+.portada-quienes-somos p {
+  font-size: 1.2rem;
+  font-family: "Roboto", sans-serif;
+  color: #f1f8fe;
+  text-align: justify;
+  text-shadow: 0.1rem 0.1rem 0.3rem black;
 }
 
-
-
-@media (min-width:1024px){
-    .header{
-        padding: .5rem 2rem .5rem 2rem;
-        height: auto;
-        position: fixed;
-        /* right: 0; */
-        /* top: 0; */
-        z-index: 10000;
-        width: 100%
-    }
-    
-    .header a{
-        font-size: 1rem;
-    }
-
-    .header ul {
-        display: flex;
-        flex-direction: row;
-        justify-content: space-evenly;
-        align-content: center;
-        justify-items: center;
-        gap: 1rem;
-        /* width: 45vw; */
-    }
-
-    .portada-index{
-        align-items: center;
-        justify-content: space-evenly;
-        padding: 4rem;
-        height: 100vh;
-    }
-
-    .portada-index h1{
-        font-size: 2.5rem;
-    }
-
-    .portada-index p{
-        font-size: 1.5rem;
-        font-weight: 300;
-    }
-
-    .tarjetas-index{
-        padding: 4rem;
-        flex-direction: row;
-        justify-content: space-between;
-        gap: auto;
-        height: auto;
-    }
-
-    .tarjetas-index .tarjet{
-        align-items: center;
-        justify-content: space-between;
-        height: auto;
-        padding: 2rem;
-        gap: auto;
-        border-radius: 1rem;
-        text-align: center;
-        width: 33%;
-    }
-
-    .tarjetas-index .tarjet .fa-solid{
-        padding: 40px;
-        font-size: 6rem;
-    }
-
-    .tarjetas-index .tarjet h3{
-        font-size: 2rem;
-    }
-
-    .tarjetas-index .tarjet p{
-        font-size: 1.3rem;
-        margin-bottom: auto;
-    }
-
-    .como-trabajamos{
-        padding: 4rem;
-        gap: 4rem;
-    }
-
-    .como-trabajamos h3{
-        font-size: 2rem ;
-    }
-
-    .como-trabajamos p{
-        font-size: 1.4rem;
-        font-weight: 300;
-    }
-
-    .footer{
-        padding: 2rem 4rem;
-        justify-content: space-between;
-        height: auto;
-    }
-
-    .footer ul{
-        height: 30vh;
-        text-align: start;
-    }
-
-    .footer .info-footer{
-        display: flex;
-        flex-direction: column;
-        justify-content: space-between;
-    }
-
-    .portada-nuestros-clientes{
-        align-items: center;
-        justify-content: space-evenly;
-        padding: 4rem;
-        height: 100vh;
-    }
-
-    .portada-nuestros-clientes h3{
-        font-size: 2.5rem;
-    }
-
-    .portada-nuestros-clientes p{
-        font-size: 1.5rem;
-    }
-
-    .portada-nuestros-clientes h3{
-        font-size: 2.5rem;
-    }
-
-    .testimonios{
-        padding: 4rem;
-        gap: 4rem;
-    }
-
-    .testimonios h3{
-        font-size: 2rem;
-    }
-
-    .testimonios .carrusel{
-        padding: 3rem;
-        gap: 2rem;
-    }
-
-    .testimonios .carrusel .testimonio-texto{
-        gap: 4rem;
-
-    }
-
-    .testimonios .carrusel .testimonio-texto p{
-        font-size: 1.5rem;
-    }
-
-    .testimonios .carrusel .usuario{
-        height: auto;
-        gap: 1rem;
-    }
-
-    .testimonios .carrusel .usuario img{
-        width: 48px;
-        height: 48px;
-        border-radius: 35px;
-    }
-
-    .testimonios .carrusel .usuario p{
-        font-size: 1rem;
-    }
-
-    .nuestros-trabajos{
-        padding: 4rem;
-        display: flex;
-        flex-direction: column;
-        justify-content: space-between;
-        align-items: center;
-        gap: 5rem;
-    }
-
-    .nuestros-trabajos h3{
-        font-size: 2rem;
-    }
-
-    .nuestros-trabajos .galeria{
-        display: grid;
-        grid-template-columns: repeat(3,1fr);
-        grid-template-rows: repeat(2,40vh);
-        justify-items: center;
-        align-items: center;
-        gap: 2rem;
-        
-    }
-
-    .nuestros-trabajos .galeria .imagen-galeria{
-        box-shadow: 0 0 6px rgba(0, 0, 0, .5);    
-        object-fit: cover;
-        width: 100%;
-        height: 100%;
-        max-height: none;
-    }
+.info {
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 1rem;
 }
+.info h3 {
+  font-family: "Roboto", sans-serif;
+  font-size: 1.5rem;
+  color: #0e2843;
+}
+.info p {
+  font-family: "Roboto", sans-serif;
+  font-size: 1.1rem;
+  color: #0e2843;
+}
+.info .iframe-desktop {
+  display: none;
+}
+
+@media (min-width: 1024px) {
+  .portada-quienes-somos {
+    padding: 4rem;
+    height: 100vh;
+  }
+  .portada-quienes-somos h3 {
+    font-size: 2.5rem;
+  }
+  .portada-quienes-somos p {
+    font-size: 1.5rem;
+  }
+  .info {
+    padding: 4rem;
+    gap: 2rem;
+  }
+  .info h3 {
+    font-size: 2rem;
+  }
+  .info p {
+    font-size: 1.5rem;
+  }
+  .info .iframe-desktop {
+    display: block;
+  }
+  .info .iframe-mobile {
+    display: none;
+  }
+}
+.portada-contacto {
+  background-image: url(../../images/imagen-portada-contacto.jpg);
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-evenly;
+  padding: 20px;
+  height: 50vh;
+}
+.portada-contacto h3 {
+  font-family: "Roboto", sans-serif;
+  color: #f1f8fe;
+  font-size: 1.5rem;
+  text-shadow: 0.2rem 0.2rem 0.4rem black;
+}
+.portada-contacto p {
+  font-size: 1.2rem;
+  font-family: "Roboto", sans-serif;
+  color: #f1f8fe;
+  text-align: justify;
+  text-shadow: 0.2rem 0.2rem 0.4rem black;
+}
+
+.formulario-contacto {
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+}
+.formulario-contacto h4 {
+  font-family: "Roboto", sans-serif;
+  font-size: 1.5rem;
+  color: #0e2843;
+}
+.formulario-contacto .formulario {
+  display: flex;
+  flex-direction: column;
+  align-items: baseline;
+  gap: 1rem;
+  width: 100%;
+}
+.formulario-contacto .formulario label {
+  font-family: "Roboto", sans-serif;
+  font-size: 1.1rem;
+  color: #0e2843;
+}
+.formulario-contacto .formulario input, .formulario-contacto .formulario textarea {
+  width: 100%;
+  border: 1px solid #0e2843;
+  border-radius: 0.2rem;
+  padding: 0.5rem;
+}
+.formulario-contacto .formulario .boton-enviar {
+  background-color: #0e2843;
+  color: #f1f8fe;
+  font-size: 1.1rem;
+  font-family: "Roboto", sans-serif;
+  padding: 20px;
+  border: none;
+  border-radius: 0.2rem;
+}
+
+.parrafo-contacto {
+  padding: 20px;
+}
+.parrafo-contacto p {
+  font-size: 1.1rem;
+  font-family: "Roboto", sans-serif;
+  color: #0e2843;
+}
+
+@media (min-width: 1024px) {
+  .portada-contacto {
+    padding: 4rem;
+    height: 100vh;
+  }
+  .portada-contacto h3 {
+    font-size: 2.5rem;
+  }
+  .portada-contacto p {
+    font-size: 1.5rem;
+  }
+  .formulario-contacto {
+    padding: 4rem;
+    display: flex;
+    flex-direction: column;
+    gap: 4rem;
+  }
+  .formulario-contacto h4 {
+    text-align: center;
+    font-family: "Roboto", sans-serif;
+    font-size: 2.5rem;
+    color: #0e2843;
+  }
+  .formulario-contacto .formulario {
+    display: flex;
+    flex-direction: column;
+    align-items: baseline;
+    gap: 1.5rem;
+    width: 100%;
+  }
+  .formulario-contacto .formulario label {
+    font-family: "Roboto", sans-serif;
+    font-size: 1.5rem;
+    color: #0e2843;
+  }
+  .formulario-contacto .formulario input, .formulario-contacto .formulario textarea {
+    width: 100%;
+    border: 1px solid #0e2843;
+    border-radius: 0.2rem;
+    padding: 1rem;
+  }
+  .formulario-contacto .formulario .boton-enviar {
+    background-color: #0e2843;
+    color: #f1f8fe;
+    font-size: 1.5rem;
+    font-family: "Roboto", sans-serif;
+    padding: 1rem;
+    border: none;
+    border-radius: 0.2rem;
+  }
+  .parrafo-contacto {
+    padding: 4rem;
+  }
+  .parrafo-contacto p {
+    font-size: 1.5rem;
+    color: #0e2843;
+  }
+}
+
+/*# sourceMappingURL=styles.css.map */

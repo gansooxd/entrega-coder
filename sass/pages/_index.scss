@@ -1,0 +1,165 @@
+.portada-index {
+    background-image: url(../images/imagen-portada-index.jpg);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-evenly;
+    padding: 20px;
+    height: 50vh;
+
+    h1 {
+        font-family: $font;
+        color: $secondary-color;
+        font-size: 1.5rem;
+        text-shadow: .2rem .2rem .4rem black;
+    }
+
+    p {
+        font-size: 1.2rem;
+        font-family: $font;
+        color: $secondary-color;
+        text-align: justify;
+        text-shadow: .2rem .2rem .4rem black;
+    }
+}
+
+
+.tarjetas-index {
+    background-color: $secondary-color;
+    padding: 20px;
+    /* height: 70vh; */
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    gap: 1rem;
+
+    .tarjet {
+        background-color: $secondary-color;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: space-evenly;
+        padding: 20px;
+        gap: 2rem;
+        border-radius: 1rem;
+        text-align: center;
+        color: $primary-color;
+        -webkit-box-shadow: 0px 0px 19px -9px rgba(66, 68, 90, 1);
+        -moz-box-shadow: 0px 0px 19px -9px rgba(66, 68, 90, 1);
+        box-shadow: 0px 0px 19px -9px rgba(66, 68, 90, 1);
+
+        .fa-solid {
+            padding: 25px;
+            color: $primary-color;
+            background-color: $secondary-color;
+            border-radius: 2rem;
+            font-size: 5rem;
+            -webkit-box-shadow: 0px 0px 28px -4px rgba(66, 68, 90, 1);
+            -moz-box-shadow: 0px 0px 28px -4px rgba(66, 68, 90, 1);
+            box-shadow: 0px 0px 28px -4px rgba(66, 68, 90, 1);
+        }
+
+        h3 {
+            font-family: $font;
+            font-size: 2rem;
+        }
+
+        p {
+            font-family: $font;
+            font-size: 1.2rem;
+            margin-bottom: 2rem;
+        }
+    }
+}
+
+
+.como-trabajamos {
+    background-color: $secondary-color;
+    padding: 25px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 1rem;
+
+    h3 {
+        font-family: $font;
+        font-size: 1.5rem;
+        color: $primary-color;
+    }
+
+    p {
+        font-family: $font;
+        font-size: 1.2rem;
+        color: $primary-color;
+        text-align: justify;
+    }
+}
+
+@media (min-width:1024px){
+    .portada-index {
+        align-items: center;
+        justify-content: space-evenly;
+        padding: 4rem;
+        height: 100vh;
+
+        h1 {
+            font-size: 2.5rem;
+        }
+
+        p {
+            font-size: 1.5rem;
+            font-weight: 300;
+        }
+    }
+
+    .tarjetas-index {
+        padding: 4rem;
+        flex-direction: row;
+        justify-content: space-between;
+        gap: auto;
+        height: auto;
+
+        .tarjet {
+            align-items: center;
+            justify-content: space-between;
+            height: auto;
+            padding: 2rem;
+            gap: auto;
+            border-radius: 1rem;
+            text-align: center;
+            width: 33%;
+
+            .fa-solid {
+                padding: 40px;
+                font-size: 6rem;
+            }
+
+            h3 {
+                font-size: 2rem;
+            }
+
+            p {
+                font-size: 1.3rem;
+                margin-bottom: auto;
+            }
+        }
+    }
+
+    .como-trabajamos {
+        padding: 4rem;
+        gap: 4rem;
+
+        h3 {
+            font-size: 2rem;
+        }
+
+        p {
+            font-size: 1.4rem;
+            font-weight: 300;
+        }
+    }
+}

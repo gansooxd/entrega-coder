@@ -1,0 +1,136 @@
+.portada-contacto {
+    background-image: url(../../images/imagen-portada-contacto.jpg);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-evenly;
+    padding: 20px;
+    height: 50vh;
+
+    h3 {
+        font-family: $font;
+        color: $secondary-color;
+        font-size: 1.5rem;
+        text-shadow: .2rem .2rem .4rem black;
+    }
+
+    p {
+        font-size: 1.2rem;
+        font-family: $font;
+        color: $secondary-color;
+        text-align: justify;
+        text-shadow: .2rem .2rem .4rem black;
+    }
+}
+
+.formulario-contacto{
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+    h4{
+        font-family: $font;
+        font-size: 1.5rem;
+        color: $primary-color;
+    }
+    .formulario{
+        display: flex;
+        flex-direction: column;
+        align-items:baseline;
+        gap: 1rem;
+        width: 100%;
+        label{
+            font-family: $font;
+            font-size: 1.1rem;
+            color: $primary-color;
+        }
+        input, textarea{
+            width: 100%;
+            border: 1px solid $primary-color;
+            border-radius: .2rem;
+            padding: .5rem;
+        };
+        .boton-enviar{
+            background-color: $primary-color;
+            color: $secondary-color;
+            font-size: 1.1rem;
+            font-family: $font;
+            padding: 20px;
+            border: none;
+            border-radius: .2rem;
+        }
+    }
+}
+
+.parrafo-contacto{
+    padding: 20px;
+    p{
+    font-size: 1.1rem;
+    font-family: $font;
+    color: $primary-color;
+    }
+}
+
+@media (min-width:1024px){
+    .portada-contacto {
+        padding: 4rem;
+        height: 100vh;
+    
+        h3 {
+            font-size: 2.5rem;
+        }
+    
+        p {
+            font-size: 1.5rem;
+        }
+    }
+    .formulario-contacto{
+        padding: 4rem;
+        display: flex;
+        flex-direction: column;
+        gap: 4rem;
+        h4{
+            text-align: center;
+            font-family: $font;
+            font-size: 2.5rem;
+            color: $primary-color;
+        }
+        .formulario{
+            display: flex;
+            flex-direction: column;
+            align-items:baseline;
+            gap: 1.5rem;
+            width: 100%;
+            label{
+                font-family: $font;
+                font-size: 1.5rem;
+                color: $primary-color;
+            }
+            input, textarea{
+                width: 100%;
+                border: 1px solid $primary-color;
+                border-radius: .2rem;
+                padding: 1rem;
+            };
+            .boton-enviar{
+                background-color: $primary-color;
+                color: $secondary-color;
+                font-size: 1.5rem;
+                font-family: $font;
+                padding: 1rem;
+                border: none;
+                border-radius: .2rem;
+            }
+        }
+    }
+    .parrafo-contacto{
+        padding: 4rem;
+        p{font-size: 1.5rem;
+        color: $primary-color;
+        }
+    }
+}

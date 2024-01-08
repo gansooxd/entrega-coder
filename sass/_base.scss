@@ -1,0 +1,30 @@
+$primary-color: #0e2843;
+$secondary-color: #f1f8fe;
+$font: 'Roboto', sans-serif;
+
+* {
+    padding: 0px;
+    margin: 0px;
+    box-sizing: border-box;
+    font-size: 1rem;
+}
+
+img {
+    max-width: 100%;
+}
+
+a {
+    text-decoration: none;
+}
+
+ul li {
+    list-style: none;
+}
+
+.activo{
+    font-weight: 700;
+}
+
+main{
+    background-color: $secondary-color;
+}

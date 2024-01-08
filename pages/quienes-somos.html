@@ -19,7 +19,7 @@
                 <li><a href="../index.html">Inicio</a> </li>
                 <li> <a href="./servicios.html">Servicios</a> </li>
                 <li> <a href="./nuestros-clientes.html">Nuestros clientes</a> </li>
-                <li><a href="./quienes-somos.html">Quienes somos</a></li>
+                <li class="activo"><a href="./quienes-somos.html">Quienes somos</a></li>
                 <li> <a href="./contacto.html">Contactos</a> </li>
             </ul>
         </nav>
@@ -29,42 +29,46 @@
     <main>
 
         <section class="portada-quienes-somos"> 
-            <img src="../images/imagen-portada-quienessomos.jpg" alt="Busqueda en laptop">
-            <h2>Quienes somos</h2>
+            <!-- <img src="../images/imagen-portada-quienessomos.jpg" alt="Busqueda en laptop"> -->
+            <h3>Quienes somos</h3>
             <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Optio recusandae nulla eius. Quae tempora aliquid perspiciatis nesciunt! Officiis, dignissimos. Enim eveniet in nesciunt deserunt, illo ex modi excepturi nostrum! Quibusdam.</p>
         </section>
 
         <!-- Aca iria info sobre nosotros (inicios, hace cuantos años trabajaos, a q nos dedicamos) -->
-        <section class="parrafo informacion-quienes-somos">
+        <section class="info">
+            <h3>Sobre nosotros</h3>
             <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Soluta est, pariatur ea vitae dolore, minus ipsum consectetur quis veniam aliquam atque exercitationem laborum incidunt facilis ratione, possimus voluptates. Laudantium, explicabo. Lorem ipsum, dolor sit amet consectetur adipisicing elit. Sequi architecto, voluptas explicabo sapiente cupiditate necessitatibus error reprehenderit deserunt temporibus culpa ea molestiae praesentium odio debitis aliquam ducimus! Vitae, accusantium? Omnis?</p>
         </section>
 
         <!-- Aca iria info como direccion, numero, redes sociales, y un mapa de google maps -->
-        <section>
+        <section class="info">
+            <h3>Donde encontrarnos</h3>
             <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolor perferendis itaque quasi facere. Excepturi nostrum sint temporibus distinctio aliquam unde earum officia eligendi repudiandae cumque nesciunt rem, quas commodi doloremque? Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quibusdam sunt cupiditate nam, dolorem provident at eligendi sint, dignissimos assumenda aspernatur impedit totam placeat commodi ex iusto optio minima quas ullam!</p>
 
-            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3282.5662714004457!2d-58.3645486!3d-34.6403994!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x95a334b1a29c61a1%3A0xb8c95ae80001f81f!2sCarlos%20F.%20Melo%20226%2C%20C1163ACF%20CABA!5e0!3m2!1ses!2sar!4v1701035805080!5m2!1ses!2sar" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+            <iframe class="iframe-mobile" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3282.5662714004457!2d-58.3645486!3d-34.6403994!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x95a334b1a29c61a1%3A0xb8c95ae80001f81f!2sCarlos%20F.%20Melo%20226%2C%20C1163ACF%20CABA!5e0!3m2!1ses!2sar!4v1701035805080!5m2!1ses!2sar" width="340" height="255" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+            <iframe class="iframe-desktop" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3282.5662714004457!2d-58.3645486!3d-34.6403994!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x95a334b1a29c61a1%3A0xb8c95ae80001f81f!2sCarlos%20F.%20Melo%20226%2C%20C1163ACF%20CABA!5e0!3m2!1ses!2sar!4v1701035805080!5m2!1ses!2sar" width="896" height="400" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
         </section>
         
     </main>
 
-    <footer>
-
+    <footer class="footer">
         <nav>
             <ul>
 
-            <li><a href="../index.html">Inicio</a></li>
-            <li><a href="./servicios.html">Servicios</a></li>
-            <li><a href="./nuestros-clientes.html">Nuestros clientes</a></li>
-            <li><a href="./quienes-somos.html">Quienes somos</a></li>
-            <li><a href="./contacto.html">Contactos</a></li>
-            
+                <li><a href="../index.html" class="activo-inicio">Inicio</a></li>
+                <li><a href="/pages/servicios.html">Servicios</a></li>
+                <li><a href="/pages/nuestros-clientes.html" class="activo-clientes" >Nuestros clientes</a></li>
+                <li class="activo"><a href="/pages/quienes-somos.html">Quienes somos</a></li>
+                <li><a href="/pages/contacto.html">Contactos</a></li>
+
             </ul>
         </nav>
 
-        <p>Numero de contacto : 113845835</p>
-        <p>Direccion : Carlos F. Melo 226</p>
-        <p>Horario de atencion: Lunes a Viernes 8:30 a 19:00</p>
+        <div class="info-footer">
+            <p>Numero de contacto : 113845835</p>
+            <p>Direccion : Carlos F. Melo 226</p>
+            <p>Horario de atencion: Lunes a Viernes 8:30 a 19:00</p>
+        </div>
 
     </footer>
 </body>

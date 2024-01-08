@@ -1,0 +1,82 @@
+.portada-quienes-somos {
+    background-image: url(../../images/imagen-portada-quienessomos.jpg);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-evenly;
+    padding: 20px;
+    height: 50vh;
+
+    h3 {
+        font-family: $font;
+        color: $secondary-color;
+        font-size: 1.5rem;
+        text-shadow: .1rem .1rem .3rem black;
+    }
+
+    p {
+        font-size: 1.2rem;
+        font-family: $font;
+        color: $secondary-color;
+        text-align: justify;
+        text-shadow: .1rem .1rem .3rem black;
+    }
+}
+
+.info{
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 1rem;
+    h3{
+        font-family: $font;
+        font-size: 1.5rem;
+        color: $primary-color;
+    }
+    p{
+        font-family: $font;
+        font-size: 1.1rem;
+        color: $primary-color;
+    }
+    .iframe-desktop{
+        display:none
+    
+    }
+}
+
+@media (min-width:1024px){
+    .portada-quienes-somos {
+        padding: 4rem;
+        height: 100vh;
+    
+        h3 {
+            font-size: 2.5rem;
+        }
+    
+        p {
+            font-size: 1.5rem;
+        }
+    }
+    .info{
+        padding: 4rem;
+        gap: 2rem;
+        h3{
+            font-size: 2rem;
+        }
+        p{
+            font-size: 1.5rem;
+        }
+        .iframe-desktop{
+            display: block;
+        }
+        .iframe-mobile{
+            display: none;
+        }
+        
+    } 
+}
