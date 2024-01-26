@@ -1,6 +1,6 @@
 
 .portada-nuestros-clientes {
-    background-image: url(../images/imagen-portada-clientes.jpg);
+    background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),url(../images/imagen-portada-clientes.jpg);
     background-position: center;
     background-size: cover;
     background-repeat: no-repeat;
@@ -122,11 +122,13 @@
         flex-direction: column;
         justify-content: space-between;
         gap: 2rem;
+        width: 100%;
 
         .imagen-galeria {
-            max-height: 20vh;
+            // max-height: 20vh;
             box-shadow: 0 0 6px rgba(0, 0, 0, .5);
             object-fit: cover;
+            aspect-ratio: 1/1;
         }
     }
 }
